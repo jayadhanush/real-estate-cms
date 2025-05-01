@@ -1,6 +1,5 @@
 const express=require("express");
-const { get } = require("../routes/userRouter");
-
+const userService=require("../services/userService");
 exports.getAllUsers = async (req, res) => {
     try{
         const users=await userService.getAllUsers();
@@ -24,7 +23,7 @@ exports.getAllUsers = async (req, res) => {
 exports.registerUser = async (req, res) => {
     try {
         const {name,email,password,phone,role}=req.body;
-        await userService.registerUser(name,email,password,phone,role);
+        await userService.registerUser({name,email,password,phone,role});
         res.status(201).json({
             success:true,
             message:'user created successfully',
