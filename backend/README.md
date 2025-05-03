@@ -1,0 +1,12 @@
+Basic Topics to be covered in mongodb backend(node js express)
+- basic server
+- routes and route types
+- MVC architecture
+- mongoose : schema :types : model
+- controllers 
+- services
+- template engines | views
+- express.static() to manage static files
+- middlewares
+- custom middlewares
+- error handling
