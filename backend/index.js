@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const app = require('./src/app');
-
+const dotenv = require('dotenv');
 dotenv.config();
 
 const mongoURI = process.env.MONGO_URI || 'mongodb://localhost:27017/realEstate';
